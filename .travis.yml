@@ -6,4 +6,4 @@ python:
 
 script: 
 
-  - python placeOrder.py
+  - python updateOrder.py
