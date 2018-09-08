@@ -48,7 +48,7 @@ def place_order():
 
     order = {
         'id': orders[-1]['id'] + 1,
-        'quantity': '1 package',
+        'quantity':request.json['quantity'],
         'name': request.json['name'],
         'type': request.json.get('type', ""),
 
