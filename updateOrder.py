@@ -61,6 +61,17 @@ def update_order(order_id):
             
     return jsonify({'order': order[0]})
 
+    order = {
+        'id': orders[-1]['id'] + 1,
+        'quantity':request.json['quantity'],
+        'name': request.json['name'],
+        'type': request.json.get('type', ""),
+
+
+
+    }
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
