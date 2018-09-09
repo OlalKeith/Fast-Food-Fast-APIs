@@ -6,4 +6,9 @@ python:
 
 script: 
 
-  - python getAllOrders.py
+  - python getAllorders.py
+  - python placeOrder.py
+  - python fetchOrder.py
+  - python updateOrder.py
+
+install: travis_wait mvn install
