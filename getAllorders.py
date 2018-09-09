@@ -9,7 +9,7 @@ def not_found(error):
 
 orders = [
 
-    {
+   {
         'id': 1,
         'quantity': '1',
         'name': 'beef roast',
@@ -36,9 +36,9 @@ orders = [
 ]
 
 
-# @app.route('/api/v1/orders/', methods=['GET'])
-# def get_orders():
-#     return jsonify({'orders': orders})
+@app.route('/api/v1/orders/', methods=['GET'])
+def get_orders():
+    return jsonify({'orders': orders})
 
 
 @app.route('/api/v1/orders/<int:order_id>', methods=['GET'])
