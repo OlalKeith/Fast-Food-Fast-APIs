@@ -10,6 +10,3 @@ script:
   - python getAllorders.py
   - python fetchOrder.py
   - python updateOrder.py
-
-  notifications:
-  email: false
