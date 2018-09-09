@@ -6,11 +6,10 @@ python:
 
 script: 
 
+  - python fetchOrder.py
   - python placeOrder.py
   - python getAllorders.py
-  - python fetchOrder.py
   - python updateOrder.py
 
-  notifications:
-  email: false
-sudo: false
+install: travis_wait mvn install
+
