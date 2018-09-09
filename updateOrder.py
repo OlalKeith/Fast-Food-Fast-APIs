@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, abort, make_response, request
 
+
 app = Flask(__name__)
 
 
@@ -40,11 +41,25 @@ orders = [
 ]
 
 
-@app.route('/api/v1/orders', methods=['POST'])
-def place_order():
-      
-    if not request.json or not 'name' in request.json:
+@app.route('/api/v1/orders/<int:order_id>', methods=['PUT'])
+def update_order(order_id):
+    # global order
+    order = [order for order in orders if order['id'] == order_id]
+    if len(order) == 0:
+        abort(404)
+    if not request.json:
         abort(400)
+    if 'name' in request.json and type(request.json['name']) != unicode:
+        abort(400)
+    if 'type' in request.json and type(request.json['type']) != unicode:
+        abort(400)
+    if 'quantity' in request.json and type(request.json['quantity']) != unicode:
+        abort(400)
+    order[0]['name'] = request.json.get('name', order[0]['name'])
+    order[0]['type'] = request.json.get('type', order[0]['type'])
+    order[0]['quantity'] = request.json.get('quantity', order[0]['quantity'])
+            
+    return jsonify({'order': order[0]})
 
     order = {
         'id': orders[-1]['id'] + 1,
@@ -55,8 +70,7 @@ def place_order():
 
 
     }
-    orders.append(order)
-    return jsonify({'order': order}), 201
+
 
 
 if __name__ == '__main__':
