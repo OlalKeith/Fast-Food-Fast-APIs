@@ -1,1 +1,1 @@
-web: gunicorn olal-fast-food-api:app
+web: gunicorn app:app
