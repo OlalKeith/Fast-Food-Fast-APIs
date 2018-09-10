@@ -41,7 +41,7 @@ orders = [
 ]
 
 
-@app.route('/api/v1/orders/', methods=['GET'])
+@app.route('/api/v1/orders', methods=['GET'])
 def get_orders():
     return jsonify({'orders': orders})
 
