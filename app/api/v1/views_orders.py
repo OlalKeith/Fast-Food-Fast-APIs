@@ -15,10 +15,10 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not Found'}), 404)
 
 
-class GetOrders(Resource):
+class GetAllOrders(Resource):
     '''Gets orders'''
 
     def get(self):
         return {'orders': orders}
 
-        api.add_resource(GetOrders, '/api/v1/orders')
+        api.add_resource(GetAllOrders, '/api/v1/orders')

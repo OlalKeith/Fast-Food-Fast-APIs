@@ -13,8 +13,8 @@ def create_app(config_name):
 	app.config.from_object('config')
 	app.url_map.strict_slashes = False
 
-	from app.api.v1.fetchOrders import GetOrders
+	from app.api.v1.views_orders import GetAllOrders
 
-	api.add_resource(GetOrders, '/api/v1/orders')
+	api.add_resource(GetAllOrders, '/api/v1/orders')
 
 	return app
