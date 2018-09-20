@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/owuor91/Desktop/create-api-endpoints/venv"
+set -gx VIRTUAL_ENV "/home/owuor91/Desktop/Fast-Food-Fast-APIs/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

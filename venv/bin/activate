@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/owuor91/Desktop/create-api-endpoints/venv"
+VIRTUAL_ENV="/home/owuor91/Desktop/Fast-Food-Fast-APIs/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
