@@ -14,5 +14,10 @@ class TestGettingAllorders(unittest.TestCase):
 		make_response = self.client.get('/api/v1/orders', content_type='application/json')
 		self.assertEqual(make_response.status_code, 200)
 
+	"""Test get single orders"""
+	def test_single_order(self):
+		make_response = self.client.get('/api/v1/orders/<int:order_id>', content_type='application/json')
+		self.assertEqual(make_response.status_code, 404)
+
 # if __name__ == '__main__':
 #     unittest.main()

@@ -1,28 +1,28 @@
 
 orders = [
 
-   {
-        'id': 1,
-        'quantity': '1',
+    {
+        'order_id': 1,
+        'price': 800.00,
         'name': 'beef roast',
-        'type': 'Meat',
-        
+        'type': 'Meat'
+
     },
 
     {
-        'id': 2,
-        'quantity': '1 package',
+        'order_id': 2,
+        'price': 500.00,
         'name': 'dried Italian salad dressing mix',
-        'type': 'Condiments',
-        
+        'type': 'Condiments'
+
     },
 
-       {
-        'id': 3,
-        'quantity': '1',
+    {
+        'order_id': 3,
+        'price': 100.00,
         'name': 'water',
-        'type': 'drinks',
-        
+        'type': 'drinks'
+
     }
 
 ]

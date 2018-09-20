@@ -19,6 +19,20 @@ class GetAllOrders(Resource):
     '''Gets orders'''
 
     def get(self):
+
+
         return {'orders': orders}
 
-        api.add_resource(GetAllOrders, '/api/v1/orders')
+
+
+class GetSingleOrder(Resource):
+    """docstring for GetSpecificOrder"""
+    def get(self, order_id):
+        order = [order for order in orders if order['order_id'] == order_id]
+
+        return {'orders': order[0]}, 200 if order else 404
+
+		
+
+        # api.add_resource(GetAllOrders, '/api/v1/orders')
+        # api.add_resource(GetSingleOrder, '/api/v1/orders/<int:order_id>')
