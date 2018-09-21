@@ -55,14 +55,15 @@ class UpdateOrder(Resource):
             
         return {'order': order[0],'message': 'Updated successfully'}, 200
 
-    # order = {
-    #     'order_id': orders[-1]['order_id'] + 1,
-    #     'quantity':request.json['quantity'],
-    #     'name': request.json['name'],
-    #     'type': request.json.get('type', ""),
 
-
-
-    # }
+class DeleteOrder(Resource):
+    """docstring for DeleteOrder"""
+    def delete(self,order_id):
+        order = [order for order in orders if order['order_id'] == order_id]
+        if len(order) == 0:
+            abort(404)
+        orders.remove(order[0])
+        return {'result':True}
+        
 
         

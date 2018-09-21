@@ -16,9 +16,11 @@ def create_app(config_name):
 	from app.api.v1.views_orders import GetAllOrders
 	from app.api.v1.views_orders import GetSingleOrder
 	from app.api.v1.views_orders import UpdateOrder
+	from app.api.v1.views_orders import DeleteOrder
 
 	api.add_resource(GetAllOrders, '/api/v1/orders')
 	api.add_resource(GetSingleOrder, '/api/v1/orders/<int:order_id>')
 	api.add_resource(UpdateOrder, '/api/v1/orders/<int:order_id>')
+	api.add_resource(DeleteOrder, '/api/v1/orders/<int:order_id>')
 
 	return app
