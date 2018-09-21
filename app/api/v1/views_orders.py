@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort, make_response
+from flask import Flask, jsonify, abort, make_response, request
 from flask_restful import Resource, Api
 
 from app.api.model import orders
@@ -34,5 +34,35 @@ class GetSingleOrder(Resource):
 
 		
 
-        # api.add_resource(GetAllOrders, '/api/v1/orders')
-        # api.add_resource(GetSingleOrder, '/api/v1/orders/<int:order_id>')
+class UpdateOrder(Resource):
+    """docstring for UpdateOrder"""
+    def put(self, order_id):
+        order = [order for order in orders if order['order_id'] == order_id]
+    # prevent bugs by doing exhaustive checking of the input arguments
+        if len(order) == 0:
+            abort(404)
+        if not request.json:
+            abort(400)
+        if 'name' in request.json and type(request.json['name']) != unicode:
+            abort(400)
+        if 'type' in request.json and type(request.json['type']) != unicode:
+            abort(400)
+        if 'price' in request.json and type(request.json['price']) != unicode:
+            abort(400)
+        order[0]['name'] = request.json.get('name', order[0]['name'])
+        order[0]['type'] = request.json.get('type', order[0]['type'])
+        order[0]['price'] = request.json.get('price', order[0]['price'])
+            
+        return {'order': order[0],'message': 'Updated successfully'}, 200
+
+    # order = {
+    #     'order_id': orders[-1]['order_id'] + 1,
+    #     'quantity':request.json['quantity'],
+    #     'name': request.json['name'],
+    #     'type': request.json.get('type', ""),
+
+
+
+    # }
+
+        
