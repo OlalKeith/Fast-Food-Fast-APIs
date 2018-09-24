@@ -2,7 +2,6 @@
 using data structures to store data in memory
 
 
-
 | EndPoint              | Functionality                  |
 | --------------------- | ------------------------------ |
 | GET /orders           | Get all the orders.            |
