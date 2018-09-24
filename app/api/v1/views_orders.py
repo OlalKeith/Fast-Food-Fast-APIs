@@ -35,15 +35,20 @@ class PlaceOrder(Resource):
         """but we are missing a name item then we return an error code 400.bad request"""
         if not request.json or not 'name' in request.json:
             abort(400)
+        '''Passed items'''
+        price = request.json['price']
+        name = request.json['name']
 
         order = {
-            'order_id': orders[-1]['order_id'] + 1,
-            'price':request.json['price'],
-            'name': request.json['name'],
-            'type': request.json.get('type', ""),
+         'order_id': len(orders) + 1,
+         'price':price,
+         'name': name,
+         'type': request.json.get('type', "")
         }
+
         orders.append(order)
-        return {'order': order}, 201
+
+        return {'data': orders}, 201
 
         
 
