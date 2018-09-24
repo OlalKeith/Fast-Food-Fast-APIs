@@ -2,6 +2,14 @@
 using data structures to store data in memory
 
 
+| EndPoint              | Functionality                  |
+| --------------------- | ------------------------------ |
+| GET /orders           | Get all the orders.            |
+| GET /orders/<orderId> | Fetch a specific order         |
+| POST /orders          | Place a new order.             |
+| PUT /orders/<orderId> | Update the status of an order. |
+
+
 <a href="https://codeclimate.com/github/OlalKeith/create-api-endpoints/maintainability"><img src="https://api.codeclimate.com/v1/badges/04cfc0a2cdb52d18b887/maintainability" /></a>
 
 
