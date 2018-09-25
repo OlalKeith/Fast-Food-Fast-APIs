@@ -2,6 +2,7 @@ import os
 from flask import Flask 
 from flask_restful import Api
 
+
 import config
 
 
@@ -11,7 +12,7 @@ def create_app(config_name, instance_relative_config=True):
 	app = Flask(__name__)
 	api  = Api(app)
 
-	app.config.from_object('config')
+	app.config.from_object('instance.config')
 	app.url_map.strict_slashes = False
 
 	from app.api.v1.views_orders import GetAllOrders
