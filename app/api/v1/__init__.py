@@ -2,10 +2,6 @@ import os
 from flask import Flask 
 from flask_restful import Api
 
-
-import config
-
-
 def create_app(config_name, instance_relative_config=True):
 
 
