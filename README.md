@@ -9,13 +9,10 @@ using data structures to store data in memory
 | PUT /orders/<orderId> | Update the status of an order. |
 
 
-<a href="https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/maintainability"><img src="https://api.codeclimate.com/v1/badges/e92621d19014869658e5/maintainability" /></a>
-
-
-<a href="https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e92621d19014869658e5/test_coverage" /></a>
-
-
-[![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=API)](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=master
+[![Build Status](https://travis-ci.com/OlalKeith/API.svg?branch=API)](https://travis-ci.com/OlalKeith/API) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/maintainability)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/test_coverage)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=API)](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=API)
 
 
 # Live Application
