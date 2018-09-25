@@ -4,7 +4,7 @@ from flask_restful import Api
 import config
 
 
-def create_app(config_name):
+def create_app(config_name, instance_relative_config=True):
 
 
 	app = Flask(__name__)
