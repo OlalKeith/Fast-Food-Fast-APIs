@@ -11,9 +11,7 @@ using data structures to store data in memory
 
 <a href="https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/maintainability"><img src="https://api.codeclimate.com/v1/badges/04cfc0a2cdb52d18b887/maintainability" /></a>
 
-
 <a href="https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/test_coverage"><img src="https://api.codeclimate.com/v1/badges/04cfc0a2cdb52d18b887/test_coverage" /></a>
-
 
 [![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=master)](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=ft-fetch-orders-160550654)
 
