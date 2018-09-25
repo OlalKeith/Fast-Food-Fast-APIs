@@ -24,4 +24,7 @@ class TestGettingAllorders(unittest.TestCase):
 		make_response = self.client.put('/api/v1/orders/<int:order_id>', content_type = 'application/json')
 		self.assertEqual(make_response.status_code, 404)
 
+	def test_place_oder(self):
+		make_response = self.client.post('/api/v1/order', content_type='application/json' )
+		self.assertEqual(make_response.status_code, 400)
 

@@ -1,6 +1,13 @@
+.env
 .venv
+env/
+venv/
+ENV/
 *.pyc
 __pycache__/
 .pytest_cache/
 .coverage
 .coverage.*
+.instance
+instance/
+
