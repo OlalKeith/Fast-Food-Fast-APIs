@@ -5,6 +5,9 @@
 
 # Fast-Food-Fast-APIs
 
+Fast-Food-Fast is a food delivery service app for a restaurant.
+
+
 ## Features
 
 *Users can fetch orders
@@ -43,26 +46,27 @@ Install project dependencies
 
 *Step 2*
 
-#### Running the application
-
+#### Running the application locally
+s
 ```python run.py```
 
 *Step 3*
 
-#### Testing
+#### Running the Tests
 
 On the terminal, run ```pytest -v```
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ce5fa5121eb851f81114)
 
-### API-Endpoints
+### Orders API-Endpoints
 
-| EndPoint              | Functionality                  |
-| --------------------- | ------------------------------ |
-| GET /orders           | Get all the orders.            |
-| GET /orders/<orderId> | Fetch a specific order         |
-| POST /orders          | Place a new order.             |
-| PUT /orders/<orderId> | Update the status of an order. |
+| Url EndPoint           | HTTP Request| Functionality                  	       		   | 
+| ---------------------  |-------------|--------------------------------------     		   |
+| /orders           	 | GET		   | Get all the orders.            		   		   |
+| /orders/<int:order_id> | GET		   | Fetch a specific order using a specific id        |
+| /orders          		 | POST 	   | Place a new order.             	       		   |
+| /orders/<int:order_id> | PUT		   | Update the status of an order using a specific id.|
+| /orders/<int:order_id> | DELETE 	   | Delete the order using a specific id 			   |
 
 
 # Live Application
@@ -71,3 +75,11 @@ This API is hosted on [heroku](https://www.heroku.com/)
 
 - [Get a list of orders](https://olal-fast-food-api.herokuapp.com/api/v1/orders)
 - [Fetch a specific order](https://olal-fast-food-api.herokuapp.com/api/v1/orders/2)
+
+
+## Licence
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+
+## Acknowledgments
+
+[w3schools](https://www.w3schools.com/)
