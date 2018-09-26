@@ -2,8 +2,8 @@ import os
 from flask import Flask 
 from flask_restful import Api
 
-LOCALPATH = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, LOCALPATH + '/../../../')
+# LOCALPATH = os.path.dirname(os.path.abspath(__file__))
+# sys.path.insert(0, LOCALPATH + '/../../../')
 
 from instance.config import app_config
 
