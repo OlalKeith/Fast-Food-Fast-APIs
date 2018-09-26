@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.com/OlalKeith/API.svg?branch=API)](https://travis-ci.com/OlalKeith/API) 
+[![Build Status](https://travis-ci.com/OlalKeith/ch-API-160779636.svg?branch=ch-API-160779636 )](https://travis-ci.com/OlalKeith/API) 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/maintainability)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/test_coverage)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/test_coverage)
-[![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=API)](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=API)
+[![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=ch-API-160779636 )](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=ch-API-160779636 )
 
 # Fast-Food-Fast-APIs
 
@@ -45,7 +45,11 @@ Install project dependencies
 
 *Step 3*
 
-```pytest -v```
+#### Testing
+
+On the terminal, run ```pytest -v```
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ce5fa5121eb851f81114)
 
 ### API-Endpoints
 
@@ -59,7 +63,7 @@ Install project dependencies
 
 # Live Application
 
-This API is hosted on [heroku](https://www.heroku.com/) [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ce5fa5121eb851f81114)
+This API is hosted on [heroku](https://www.heroku.com/) 
 
 - [Get a list of orders](https://olal-fast-food-api.herokuapp.com/api/v1/orders)
 - [Fetch a specific order](https://olal-fast-food-api.herokuapp.com/api/v1/orders/2)

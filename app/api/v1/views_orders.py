@@ -6,8 +6,6 @@ from app.api.model import orders
 app = Flask(__name__)
 api = Api(app)
 
-# orders = []
-# id = 0
 
 @app.errorhandler(404)
 def not_found(error):
