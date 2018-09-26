@@ -62,11 +62,11 @@ On the terminal, run ```pytest -v```
 
 | Url EndPoint           | HTTP Request| Functionality                  	       		   | 
 | ---------------------  |-------------|--------------------------------------     		   |
-| /orders           	 | GET		   | Get all the orders.            		   		   |
-| /orders/<int:order_id> | GET		   | Fetch a specific order using a specific id        |
-| /orders          		 | POST 	   | Place a new order.             	       		   |
-| /orders/<int:order_id> | PUT		   | Update the status of an order using a specific id.|
-| /orders/<int:order_id> | DELETE 	   | Delete the order using a specific id 			   |
+| /api/v1/orders        | GET		   | Get all the orders.            		   		   |
+| /api/v1/orders/<int:order_id> | GET	| Fetch a specific order using a specific id       |
+| /api/v1/order          | POST 	   | Place a new order.             	       		   |
+| /api/v1/orders/<int:order_id> | PUT	| Update the status of an order using a specific id.|
+| /api/v1/orders/<int:order_id>| DELETE | Delete the order using a specific id 			   |
 
 
 # Live Application
