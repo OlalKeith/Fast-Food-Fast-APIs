@@ -15,11 +15,11 @@ def create_app(config_name= 'testing'):
 	app.config.from_object(app_config["testing"])
 	app.url_map.strict_slashes = False
 
-	from app.api.v1.views_orders import get_all_orders_view 
-	from app.api.v1.views_orders import get_single_order_view
-	from app.api.v1.views_orders import update_meal_view
-	from app.api.v1.views_orders import delete_meal_view
-	from app.api.v1.views_orders import place_order_view
+	from .api.v1.views_orders import get_all_orders_view 
+	from .api.v1.views_orders import get_single_order_view
+	from .api.v1.views_orders import update_meal_view
+	from .api.v1.views_orders import delete_meal_view
+	from .api.v1.views_orders import place_order_view
 
 	app.add_url_rule('/api/v1/orders' , view_func = get_all_orders_view)
 	app.add_url_rule('/api/v1/orders/<int:order_id>' , view_func = update_meal_view)
