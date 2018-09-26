@@ -83,3 +83,7 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 ## Acknowledgments
 
 [w3schools](https://www.w3schools.com/)
+
+![screenshot from 2018-09-08 18-33-24](https://user-images.githubusercontent.com/13969404/46113094-b3a6c700-c1f5-11e8-9691-46f7a20ebeb6.png)
+![screenshot from 2018-09-08 18-47-09](https://user-images.githubusercontent.com/13969404/46113095-b3a6c700-c1f5-11e8-8d83-72b2aa865c06.png)
+![screenshot from 2018-09-08 19-20-18](https://user-images.githubusercontent.com/13969404/46113180-02546100-c1f6-11e8-890b-32db83c912c2.png)
