@@ -15,17 +15,22 @@ def create_app(config_name= 'testing'):
 	app.config.from_object(app_config["testing"])
 	app.url_map.strict_slashes = False
 
-	from app.api.v1.views_orders import GetAllOrders
-	from app.api.v1.views_orders import GetSingleOrder
-	from app.api.v1.views_orders import UpdateOrder
-	from app.api.v1.views_orders import DeleteOrder
-	from app.api.v1.views_orders import PlaceOrder
+	from app.api.v1.views_orders import get_all_orders_view 
+	from app.api.v1.views_orders import get_single_order_view
+	from app.api.v1.views_orders import update_meal_view
+	from app.api.v1.views_orders import delete_meal_view
+	from app.api.v1.views_orders import place_order_view
 
-	api.add_resource(GetAllOrders, '/api/v1/orders')
-	api.add_resource(UpdateOrder, '/api/v1/orders/<int:order_id>')
-	api.add_resource(DeleteOrder, '/api/v1/orders/<int:order_id>')
-	api.add_resource(GetSingleOrder, '/api/v1/orders/<int:order_id>')
-	api.add_resource(PlaceOrder, '/api/v1/order')
+	app.add_url_rule('/api/v1/orders' , view_func = get_all_orders_view)
+	app.add_url_rule('/api/v1/orders/<int:order_id>' , view_func = update_meal_view)
+	app.add_url_rule('/api/v1/orders/<int:order_id>' , view_func = get_single_order_view)
+	app.add_url_rule('/api/v1/order' , view_func = place_order_view)
+	app.add_url_rule('/api/v1/orders/<int:order_id>' , view_func = delete_meal_view)
+
+
+
+
+
 
 
 	return app

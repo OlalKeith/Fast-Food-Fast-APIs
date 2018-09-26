@@ -1,5 +1,6 @@
-from flask import Flask, jsonify, abort, make_response, request
+from flask import Flask, jsonify, abort, make_response, request 
 from flask_restful import Resource, Api
+from flask.views import MethodView
 
 from app.api.model import orders
 
@@ -12,21 +13,21 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not Found'}), 404)
 
 
-class GetAllOrders(Resource):
+class GetAllOrders(MethodView):
     '''Gets orders'''
     def get(self):
 
         return {'orders': orders}
 
 
-class GetSingleOrder(Resource):
+class GetSingleOrder(MethodView):
     """docstring for GetSpecificOrder"""
     def get(self, order_id):
         order = [order for order in orders if order['order_id'] == order_id]
 
         return {'orders': order[0]}, 200 if order else 404
 
-class PlaceOrder(Resource):
+class PlaceOrder(MethodView):
     """docstring for placing order"""
     def post(self):
         """requesting the data. If the data isn't there, or if it is there,"""
@@ -49,7 +50,7 @@ class PlaceOrder(Resource):
         return {'data': orders}, 201
 		
 
-class UpdateOrder(Resource):
+class UpdateOrder(MethodView):
     """docstring for UpdateOrder"""
     def put(self, order_id):
         order = [order for order in orders if order['order_id'] == order_id]
@@ -71,7 +72,7 @@ class UpdateOrder(Resource):
         return {'order': order[0],'message': 'Updated successfully'}, 200
 
 
-class DeleteOrder(Resource):
+class DeleteOrder(MethodView):
     """docstring for DeleteOrder"""
     def delete(self,order_id):
         order = [order for order in orders if order['order_id'] == order_id]
@@ -79,4 +80,13 @@ class DeleteOrder(Resource):
             abort(404)
         orders.remove(order[0])
         return {'result':True}
+
+delete_meal_view  = DeleteOrder.as_view('meal_view')
+update_meal_view = UpdateOrder.as_view('update_meal_view ')
+place_order_view = PlaceOrder.as_view('place_order_view')
+get_single_order_view = GetSingleOrder.as_view('get_single_order_view')
+get_all_orders_view = GetAllOrders.as_view('get_all_orders_view')
+
+
+
 
