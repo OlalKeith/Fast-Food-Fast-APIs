@@ -56,8 +56,6 @@ s
 
 On the terminal, run ```pytest -v```
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ce5fa5121eb851f81114)
-
 ### Orders API-Endpoints
 
 | Url EndPoint           | HTTP Request| Functionality                  	       		   | 
@@ -69,16 +67,14 @@ On the terminal, run ```pytest -v```
 | /api/v1/orders/<int:order_id>| DELETE | Delete the order using a specific id 			   |
 
 
-# Live Application
-
-This API is hosted on [heroku](https://www.heroku.com/) 
+# Live Application 
 
 - [Get a list of orders](https://olal-fast-food-api.herokuapp.com/api/v1/orders)
 - [Fetch a specific order](https://olal-fast-food-api.herokuapp.com/api/v1/orders/2)
 
 
 ## Licence
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
