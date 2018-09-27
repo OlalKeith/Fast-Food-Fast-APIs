@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/OlalKeith/ch-API-160779636.svg?branch=ch-API-160779636 )](https://travis-ci.com/OlalKeith/API) 
+[![Build Status](https://travis-ci.org/OlalKeith/Fast-Food-Fast-APIs.svg?branch=ch-API-160779636)](https://travis-ci.org/OlalKeith/Fast-Food-Fast-APIs)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/maintainability)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e92621d19014869658e5/test_coverage)](https://codeclimate.com/github/OlalKeith/Fast-Food-Fast-APIs/test_coverage)
 [![Coverage Status](https://coveralls.io/repos/github/OlalKeith/Fast-Food-Fast-APIs/badge.svg?branch=ch-API-160779636 )](https://coveralls.io/github/OlalKeith/Fast-Food-Fast-APIs?branch=ch-API-160779636 )
@@ -10,15 +10,15 @@ Fast-Food-Fast is a food delivery service app for a restaurant.
 
 ## Features
 
-*Users can fetch orders
+* Users can fetch orders
 
-*Users can fetch a specific order
+* Users can fetch a specific order
 
-*Users can Update there order
+* Users can Update there order
 
-*Users can place orders
+* Users can place orders
 
-*Users can delete an order
+* Users can delete an order
 
 
 ### Getting started?
