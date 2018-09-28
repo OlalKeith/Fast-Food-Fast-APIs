@@ -28,9 +28,4 @@ def create_app(config_name= 'testing'):
 	app.add_url_rule('/api/v1/orders/<int:order_id>' , view_func = delete_meal_view)
 
 
-
-
-
-
-
 	return app
