@@ -81,7 +81,7 @@ class DeleteOrder(MethodView):
         orders.remove(order[0])
         return {'result':True}
 
-delete_meal_view  = DeleteOrder.as_view('meal_view')
+delete_meal_view  = DeleteOrder.as_view('delete_meal_view')
 update_meal_view = UpdateOrder.as_view('update_meal_view ')
 place_order_view = PlaceOrder.as_view('place_order_view')
 get_single_order_view = GetSingleOrder.as_view('get_single_order_view')

@@ -1,8 +1,8 @@
 import unittest, os , sys
 import json
 
-LOCALPATH = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, LOCALPATH + '/../../../')
+# LOCALPATH = os.path.dirname(os.path.abspath(__file__))
+# sys.path.insert(0, LOCALPATH + '/../../../')
 
 from app import create_app
 
